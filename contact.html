@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<html lang="en-us">
+
+<head>
+	<!-- So I think I got some of this stuff is right, I think the x-ua-compatible meta has something to do with compatibility with Innternet Explorer, got the viewport meta to interpret divice sizes, bootsrap css link.-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="I-E=edge">
+	<meta name="viewport" content="width=device-width, initial-scale = 1">
+	<title>Bootstrap Contact</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<style>
+		.jumbotron {
+			background: url('assets/images/concrete_seamless.png')
+		}
+		h1 {
+			font-size: 30px;
+		}
+		h2, h3 {
+			font-size: 22px;
+		}
+		
+	</style>
+</head>
+
+<body> <!-- I'm sure some of this code in here isn't doing anything, but was inserted in an effort to accomplish something, and never removed. I've run out of time to tweak. I couldn't get the navbar to extend to the edges of the container, I couldn't get the links in the navbar to align properly, padding and margins meed to be adjusted more-->
+	<div class="container page-header">
+	<div class="jumbotron" style="padding: 0px 15px 30px 15px;">
+
+		<div class="container-fluid" style="padding: 0px 0px 0px 0px; z-index: 99;">
+			<div class="row text-center" style="background-color:#4aaaa5; font-family: 'Georgia', Times, Times New Roman, serif;">
+				<div class="col-md-12" style="font-family: "Helvetica Neue", Helvetica, sans-serif;">
+					<h1>Robin Bertuccelli</h1>
+				</div>	
+			</div>	
+		</dir>
+
+		<dir class="container" style="padding: 0px 0px 15px 0px; padding-top: 0px; border: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;">
+		
+
+		<div class="navbar fixed-top" style="background-color:#fff;">
+			<div class="row">
+				<div class="col-md-4" style="padding-left: 0px;">
+
+			<nav class="navbar navbar-light bg-light";">
+	  			<span class="navbar-text">
+	   			<a href="index.html"><h2 style="text-align:center;">About</h2></a>
+	  			</span>
+			</nav>
+					
+				</div>
+
+			
+				<div class="col-md-4">
+
+			<nav class="navbar navbar-light bg-light">
+	  			<span class="navbar-text">
+	   			<a href="portfolio.html"><h2 style="text-align:center;">Portfolio</h2></a>
+	  			</span>
+				</nav>
+					
+				</div>
+				
+				<div class="col-md-4">
+
+			<nav class="navbar navbar-light bg-light">
+	  			<span class="navbar-text">
+	   			<a href="contact.html"><h2 style="text-align:center;">Contact</h2></a>
+	  			</span>
+				</nav>
+					
+				</div>
+				
+			</div>
+		</div>
+	</dir>
+
+	
+<div class="container">
+	<section class="main-container" style="background-color:#fff; border-bottom:3px solid #ddd;">
+		<h1 style="font-size:30px; border-bottom:3px solid #ddd">Contact</h1>
+		<form id="contact-form">
+			<ul>
+				<li>
+					<label for="name">Name</label>
+					<br>
+					<input type="text" name="name" id="name" placeholder="John Smith" required="required">
+				</li>
+
+				<li>
+				<label for="name">email</label>
+				<br>
+				<input type="text" name="email" id="email" placeholder="example@gmail.com"  required="required"> 
+				</li>
+
+				<li>
+					<label for="message">Message</label>
+					<br>
+					<textarea id="message" name="message" required="required" rows="10" cols="50"> </textarea>
+				</li>
+			</ul>
+			<input type="submit" name="submit">
+		</forn>					
+
+	</section>
+
+
+<!-- The connect with me button/icons -->
+		
+	<div class="container" style="background-color:#fff; padding-top:25px" >
+		<div class="row">
+			<div class="col-md-12">
+			<h2> Connect with me</h2>
+			</div>
+		</div>
+		<section>
+		<div class="row">
+
+			<div class="col-md-1">
+				<img src="assets/images/icons/github.png" class="social" alt="Github" height="100px" width="100px" style="padding-right:20px;">
+			</div>
+
+			<div class="col-md-1">	
+				<img src="assets/images/icons/linkedin.png" class="social" alt="Linkedin" height="100px" width="100px">
+			</div>
+
+			<div class="col-md-1">
+			<img src="assets/images/icons/stackoverflow.png" class="social" alt="Stackoverflow" height="100px" width="100px">
+			</div>
+			<div class="col-md-9">
+			</div>
+		</div>
+		</section>
+	</div>
+
+<!-- I didn't even get to this footer. I could probably do it now, but I need to brush up on my Javascript. I can't go into another class lost on JavaScript-->	
+
+<footer class="container">
+		&copy; Copyright 2017 Robin Bertuccelli
+</footer>
+
+</body>
+</html>
