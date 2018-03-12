@@ -1,171 +1,94 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html>
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="I-E=edge">
-	<meta name="viewport" content="width = device-width, initial-scale = 1">
-	<title>Bootstrap Index</title>
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-	<style>
-		.jumbotron {
-			background: url('assets/images/concrete_seamless.png')
-		}
-		h1 {
-			font-size: 30px;
-		}
-		h2, h3 {
-			font-size: 22px;
-		}
-	</style>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Robin Bertuccelli</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- Link access the reset.css flie -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
+    <!--Bootswatch-->
+    <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.3/lux/bootstrap.min.css" rel="stylesheet" integrity="sha384-XI0PIujkSZEzZ5m8WTEm+krRuIpfO+vHrEznaIrhTAkbrbIvfs11kzCqUarPR7yn" crossorigin="anonymous"/>
+    <!-- Link to my jQuery information -->
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Firebase database script below -->
+    <script src="https://www.gstatic.com/firebasejs/4.8.2/firebase.js"></script>
+    <!-- Popper.js -->
+    <script  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.5/umd/popper.min.js"></script>
+    <!-- Bootstrap JS file -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- Moment link for time use **NOT IN USE YET **-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.20.1/moment.js"></script>
+    <!--google fonts -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Nunito+Sans"/>
+    <!-- Izimodal modal library-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.min.css" integrity="sha384-twsqDCMYZktKK4KMv8cXDnLhBCVchPMuxLKKh1azoa3vn5nKRF/8PK4GmIgD0JaW" crossorigin="anonymous"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.min.js" integrity="sha384-OCBM5wbr9X4XRMO0UcgNtJrfDZz4bo4c6PDZrxVN8zLSn6/B0CKZ/RUBRDDVqgt4" crossorigin="anonymous"></script>
+    <!-- responsive meta tag-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
 
 <body>
+    <!--Makes entire page clickable in conjunction with js-->
+    <div class="landing-page"><a href="about.html"></a>
 
-<div class="container page-header">
-<div class="jumbotron" style="padding: 0px 15px 30px 15px;">
+        <!-- Carousel of photos-->
+        <div id="photo-carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" id="index-image" src="assets/images/IcehouseSculpture-860x450.jpg" alt="Little Waverly Lake, 2014"/>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" id="index-image" src="assets/images/1stSnow-860x450.jpg" alt="Backyard. Edina, 2015"/>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" id="index-image" src="assets/images/dessa-860x450.jpg" alt="Me and Dessa Video Shoot"/>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" id="index-image" src="assets/images/happinesswell-860x450.jpg" alt="The Happiness Well Short Film slide"/>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" id="index-image" src="assets/images/Metrodome-860x450.jpg" alt="Lunchtime at Bret Farve/Hyandai Superbowl Commercial Shoot"/>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" id="index-image" src="assets/images/SmallProfileRobin-860x450.jpg" alt="Close up of me"/>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" id="index-image" src="assets/images/Sasquatch-860x450.jpg" alt="Seeking Sasquatch Short Film"/>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" id="index-image" src="assets/images/aicppromo-860x450.jpg" alt="Me and Dave Schnack"/>
+                </div>
+                <!-- Text Overlay  -->
+                <div class="text-overlay">Robin Bertuccelli</div>
+            </div>
+        </div>
 
-	<div class="container-fluid" style="padding: 0px 0px 0px 0px; z-index: 99;">
-		<div class="row text-center" style="background-color:#4aaaa5; font-family: 'Georgia', Times, Times New Roman, serif;">
-			<div class="col-md-12">
-				<h1>Robin Bertuccelli</h1>
-			</div>	
-		</div>	
-	</dir>
+        <!-- Landing Page Text -->
+        <div class="container" href="about.html">
+            <div class="row">
+                <div class="col-sm-6" id="mainpage-text">
+                    <br>
+                    <p>Welcome to the official website of Robin Bertuccelli. Thank you for checking me out.</p>
+                    <p>Click anywhere to learn more about me</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<!--Navbar. Never got it to align properly-->
-	<dir class="container" style="padding: 0px 0px 15px 0px; padding-top: 0px; border: 0px 0px 0px 0px; margin: 0px 0px 0px 0px;">
-		
-
-		<div class="navbar fixed-top" style="background-color:#fff;">
-			<div class="row">
-				<div class="col-md-4" style="padding-left: 0px;">
-
-			<nav class="navbar navbar-light bg-light" style="text-center;">
-	  			<span class="navbar-text">
-	   			<a href="index.html"><h2>About</h2></a>
-	  			</span>
-			</nav>
-					
-				</div>
-
-			
-				<div class="col-md-4">
-
-			<nav class="navbar navbar-light bg-light" style="text-center;">
-	  			<span class="navbar-text">
-	   			<a href="portfolio.html"><h2>Portfolio</h2></a>
-	  			</span>
-				</nav>
-					
-				</div>
-				
-				<div class="col-md-4">
-
-			<nav class="navbar navbar-light bg-light" style="text-center;">
-	  			<span class="navbar-text">
-	   			<a href="contact.html"><h2>Contact</h2></a>
-	  			</span>
-				</nav>
-					
-				</div>
-				
-			</div>
-		</div>
-	</dir>
-
-		<!--About me row-->
-<div class="container" style="background-color: #fff;">
-	
-
-	<div class="container" style="margin-bottom:10px; margin-bottom-color: 666;">
-		
-		<div class="row text-muted">
-			<div class="col-md-4">
-			<h1>About Me</h1>	
-			</div>
-		
-		
-			<div class="col-md-4">
-			</div>
-
-
-			<div class="col-md-4">
-			</div>
-
-			
-		</div>
-	</div>
-
-
-
-		<!--Metrodme Image row-->
-	<div class="container">
-		
-
-		<div class="row text-center" style="background-color: #fff;"> <!--style="background-color: #fff;"-->>
-			<div class="col-md-12">
-				<img src="assets/images/metrodome.jpg">
-			</div>
-
-		</div>
-		<dir class="row" style="background-color: #fff;"> <!--style="background-color: #fff;>-->
-				<div class="col-md-12">
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dictum finibus sem in posuere. Praesent sagittis lacus in ipsum pulvinar, in porta libero consectetur. Suspendisse fermentum, eros dictum efficitur bibendum, erat justo interdum nulla, ac cursus felis dolor non massa. Etiam varius orci eu placerat sollicitudin. Aliquam ullamcorper, nisi tempus pretium egestas, purus ex ultricies enim, id pellentesque quam velit sed purus. Pellentesque faucibus eros a turpis efficitur consequat. Sed porta diam at sem mollis, ac facilisis augue bibendum. Donec ac metus nec ligula vestibulum tincidunt a nec nulla. Phasellus lacinia lorem id justo aliquam, nec maximus leo suscipit. Fusce suscipit, turpis eget imperdiet consequat, purus lacus varius nibh, quis ultrices sem tellus in felis. Morbi sodales urna sed malesuada tristique. In condimentum a quam quis volutpat. Nam semper massa metus, nec accumsan velit facilisis nec. Curabitur id libero nulla. In dictum ultrices tortor sit amet vehicula. Curabitur suscipit erat sed libero venenatis, euismod ultricies quam auctor.
-					</p>
-
-
-					<p>Aenean odio tellus, mollis ultrices lectus vitae, pretium porta dui. Nam nunc ex, euismod pretium euismod id, egestas sollicitudin leo. Morbi non dui sed tellus vehicula finibus ac a massa. Aenean commodo, tortor ut posuere varius, purus tellus ullamcorper ex, sit amet dictum mi leo sit amet neque. Aenean id ex varius, tincidunt risus et, volutpat urna. Proin facilisis vehicula est, at tristique tortor dictum quis. Praesent venenatis mi eu elementum eleifend. Nulla in ex augue. Phasellus eleifend est vel lacus maximus lobortis. In vestibulum sed turpis ut mollis. Sed auctor pharetra lacus id dignissim.
-					</p>
-
-
-				</div>
-		</dir>
-	</div>
-
-	</div>
-	<div class="row">
-		<div class="col-md-12">
-			<h1>Connect with Me</h1>
-		</div>
-	</div>	
-	
-	<div class="row">	
-		<div class="col-md-4">
-		
-		<section class="sidebar">
-		<div id="connect">
-			<h2> Connect with me</h2>
-			<img src="assets/images/icons/github.png" class="social" alt="Github">
-			<img src="assets/images/icons/linkedin.png" class="social" alt="Linkedin">
-			<img src="assets/images/icons/stackoverflow.png" class="social" alt="Stackoverflow">
-		</div>
-		</section>
-
-	<div class="row">	
-		<div class="col-md-4">
-
-		</div>
-	</div>	
-
-	<div class="row">	
-		<div class="col-md-4">
-		
-		</div>
-	</div>
 
 
 	
-	<div class="row">
-		<div class="col-md-12">
-			
-			<footer class="container">
-			&copy; Copyright 2017 Robin Bertuccelli
-			</footer>
-		</div>			
-	</div>	
-</div>
-</div>
+    <div class="card-body" id="footer">
+        <p>Robin Bertuccelli
+        © 2018 www.robinbertuccelli.com. All rights reserved.</p>
+    </div>
 
+    <!-- Link for Javascripting information -->
+    <script  src="assets/javascript/email.js"></script>
+    <script src="assets/javascript/app.js"></script>
+    <!-- Link access to the style.css file - if any would be applied. -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
 
 </body>
 </html>
