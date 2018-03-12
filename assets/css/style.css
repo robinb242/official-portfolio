@@ -1,0 +1,188 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:400,600");
+:root {
+  --blue: #007bff;
+  --indigo: #6610f2;
+  --purple: #6f42c1;
+  --pink: #e83e8c;
+  --red: #d9534f;
+  --orange: #fd7e14;
+  --yellow: #f0ad4e;
+  --green: #4BBF73;
+  --teal: #20c997;
+  --cyan: #1F9BCF;
+  --white: #fff;
+  --gray: #919aa1;
+  --gray-dark: #343a40;
+  --primary: #1a1a1a;
+  --secondary: #fff;
+  --success: #4BBF73;
+  --info: #1F9BCF;
+  --warning: #f0ad4e;
+  --danger: #d9534f;
+  --light: #fff;
+  --dark: #343a40;
+  --breakpoint-xs: 0;
+  --breakpoint-sm: 576px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 992px;
+  --breakpoint-xl: 1200px;
+  --font-family-sans-serif: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body{
+  background-color: white;
+  letter-spacing: .25px;
+  font-family:"Nunito Sans";
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h2 {
+  font-size: 25px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+nav{
+  margin:auto;
+}
+
+.form-group{
+  word-spacing: .25px;
+}
+
+.container page-header {
+  font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.input-group-text {
+  width:230px;
+}
+
+/*All pages*/
+.navbar-brand{
+  margin-left:100px;
+}
+
+#photo-carousel{
+  padding-bottom:30px;
+  border-top:solid lightgrey 5px;
+}
+
+.input-group-prepend{
+  background-color: #eceeef;
+  }
+  
+
+}
+
+#footer{
+  margin:auto;
+  color:darkgrey;
+  text-align: center;
+  font-size: 10px;
+  letter-spacing: .25px;
+  width:315px;
+  margin-top:25px;
+}
+
+/*Landing Page*/
+.landing-page{
+  cursor: pointer;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    color:white;
+    border-top:2px solid white;
+    border-bottom:2px solid white;
+    text-align: center;
+}
+
+#index-image {
+ -webkit-filter: grayscale(100%) brightness(50%);
+
+}
+
+#mainpage-text{
+  text-align: center;
+  margin:auto;
+}
+
+
+}
+
+/*Host Page*/
+#detail-header{
+  margin-bottom:20px;
+}
+
+.host-page-header{
+  padding:10px;
+  margin:30px 0px 30px 0px;
+  background-image:url("../images/tweed.png");
+  color:white;
+}
+
+#address-form {
+  margin: 0;
+  font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #919aa1;
+  text-align: left;
+  background-color: transparent;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  font-family: inherit;
+}
+
+
+/*Modal Styling*/
+#modal-login-form{
+  padding-bottom:20px;
+}
+
+#modal-authenticate {
+  max-width: 800px!important
+}
+
+.nav-tabs {
+    margin-bottom: 15px;
+}
+
+.sign-with {
+    margin-top: 25px;
+    padding: 20px;
+}
+
+div#OR {
+    height: 30px;
+    width: 30px;
+    border: 1px solid #C2C2C2;
+    border-radius: 50%;
+    font-weight: bold;
+    line-height: 28px;
+    text-align: center;
+    font-size: 12px;
+    float: right;
+    position: absolute;
+    right: -16px;
+    top: 40%;
+    z-index: 1;
+    background: #DFDFDF;
+}
