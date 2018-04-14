@@ -186,3 +186,23 @@ div#OR {
     z-index: 1;
     background: #DFDFDF;
 }
+
+#metrodome {
+  width: 100px;
+}
+ .sticky {
+  position: sticky;
+  top: 10px;
+}
+.social {
+max-width: 50px;
+
+}
+
+
+
+
+
+
+
+
