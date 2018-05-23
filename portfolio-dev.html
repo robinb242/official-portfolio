@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <!-- Link access the reset.css flie -->
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
     <!--Bootswatch-->
     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0-beta.3/lux/bootstrap.min.css" rel="stylesheet" integrity="sha384-XI0PIujkSZEzZ5m8WTEm+krRuIpfO+vHrEznaIrhTAkbrbIvfs11kzCqUarPR7yn" crossorigin="anonymous"/>
     <!-- Link to my jQuery information -->
@@ -26,13 +27,16 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.min.js" integrity="sha384-OCBM5wbr9X4XRMO0UcgNtJrfDZz4bo4c6PDZrxVN8zLSn6/B0CKZ/RUBRDDVqgt4" crossorigin="anonymous"></script>
     <!-- responsive meta tag-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    
 </head>
 
 <body>
 
 <!--Navbar. Never got it to align properly-->
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav id="topNav" class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html">Robin Bertuccelli</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -51,111 +55,118 @@
             </ul>
         </div>
     </nav>
+
+    <!-- Side navigation -->
+     <div id="mySidenav" class="sidenav">
+
+  <a href='https://www.facebook.com/robin.bertuccelli/' target="blank" id="facebook">
+  	<img src="assets/images/if_facebook.png"  alt=Facebook style="width: 40px; margin-left: auto;
+    margin-right: auto">
+  </a>
+
+  <a href="https://github.com/robinb242" target="blank" id="github">
+  	<img src="assets/images/if_social-github.png"  alt="Github" style="width: 40px; margin-left: auto;
+    margin-right: auto"> 
+  </a>
+
+  <a href="https://www.linkedin.com/in/robin-bertuccelli/" target="blank" id="linkedin">
+  	<img src="assets/images/if_linkedin.png"  alt=LinkedIn style="width: 40px; margin-left: auto;
+    margin-right: auto">
+  </a>
+
+  <a href="https://www.imdb.com/name/nm3031887/?ref_=fn_al_nm_1" target="blank"  id="imdb">
+  	<img src="assets/images/imdb.png"  alt=LinkedIn style="width: 40px; margin-left: auto;
+    margin-right: auto">
+  </a>
+</div>
+
+
+
+<!--Main Portfolio cards-->
+
 	<div class="container">
 		<div class="row">
-			<div class="col-md-3">
+			<div class="col-md-3" id="projectLinks">
 				<a href="https://protected-lake-93815.herokuapp.com/">
-					<img src="assets/images/candiMatchSS.png" class="auth-image" alt="First Group Project" style="width: 250px;">
-					<h3>CandiMatch React App</h3>
+					<img src="assets/images/candiMatchSS200.png" class="portfolioImage" alt="First Group Project" style="width: 230px; border-width: 1px; border-color: #333333; border-style: solid;">
+					CandiMatch React App
 				</a>
 			</div>
-			<div class="col-md-3">
+
+			<div class="col-md-3" id="projectLinks">
 				<a href="https://pacific-reaches-69935.herokuapp.com/">
-					<img src="assets/images/walkingDeadClickyGame.png" class="auth-image" alt="First Group Project" style="width: 250px;">
-					<h3>Walking Dead Clicky Game</h3>
+					<img src="assets/images/walkingDeadClickyGame.png" class="portfolioImage" alt="First Group Project" style="width: 230px; border-width: 1px; border-color: #333333; border-style: solid;">
+					Walking Dead Clicky Game
 				</a>
 			</div>
 
-			<div class="col-md-3">
+			<div class="col-md-3" id="projectLinks">
 				<a href="https://pet-match-app.herokuapp.com/">
-					<img src="assets/images/petMatch.png" class="auth-image" alt="First Group Project" style="width: 250px;">
-					<h3>AdoptMeNow - Resue pet finding app.</h3>
+					<img src="assets/images/petMatch.png" class="portfolioImage" alt="First Group Project" style="width: 230px; border-width: 1px; border-color: #333333; border-style: solid;">
+					AdoptMeNow - Rescue pet finding app.
 				</a>
 			</div>
-
-			<div class="col-md-3">
-				<a href="https://github.com/robinb242/project1MyShinDig">
-					<img src="assets/images/myShinDigSS.png" class="auth-image" alt="First Group Project" style="width: 250px;">
-					<h3>MyShinDig - Party Planing WebSite.</h3>
-				</a>
-			</div>
+		</div>
+	</div>
+			
 
 	<div class="container">
 		<div class="row">
 
-			<div class="col-md-3">
-				<a href="https://github.com/robinb242/trainSchedule">
-					<img src="assets/images/trainScheduleSS.png" class="auth-image" alt="TrainScheduler" style="width: 250px;">
-					<h3>Train Scheduler - Train Engineer Scheduling Tool.</h3>
+			<div class="col-md-3" id="projectLinks" style="">
+				<a href="https://github.com/robinb242/trainSchedule" >
+					<img src="assets/images/trainScheduleSS200.png" class="portfolioImage" alt="TrainScheduler" style="width: 230px; border-width: 1px; border-color: #333333; border-style: solid;">
+					Train Scheduler - Train Engineer Scheduling Tool.
 				</a>
 			</div>
 			
-			<div class="col-md-3">
-				<a href="https://github.com/robinb242/liri-node-app">
-					<img src="assets/images/liri-node-app.png" class="auth-image" alt="Liri-Node-App" style="width: 250px;">
-					<h3>liri-node-app</h3>
-				</a>
-			</div>
-			<div class="col-md-3">
+			<div class="col-md-3" id="projectLinks">
 				<a href="https://github.com/robinb242/FriendFinder">
-					<img src="assets/images/FriendFinder.png" class="auth-image" alt="Friend Finder App" style="width: 250px;">
-					<h3>Friend Finder</h3>
+					<img src="assets/images/FriendFinder.png" class="portfolioImage" alt="Friend Finder App"  style="width: 230px; border-width: 1px; border-color: #333333; border-style: solid;">
+					Friend Finder
 				</a>
 			</div>
-
-			<div class="col-md-3">
+ 
+			<div class="col-md-3" id="projectLinks">
 				<a href="https://github.com/robinb242/burger">
-					<img src="assets/images/burgerPic.png" class="auth-image" alt="First Group Project" style="width: 250px;">
-					<h3>Eat-A-Burger - Integrating numerous back end technologies.</h3>
+					<img src="assets/images/burgerPic.png" class="portfolioImage" alt="First Group Project"  style="width: 230px; border-width: 1px; border-color: #333333; border-style: solid;">
+					Eat-A-Burger - Integrating numerous back end technologies.
 				</a>
 			</div>
+		</div>
+	</div>
 	<div class="container">
 		<div class="row">
-			<div class="col-md-3">
+			<div class="col-md-3" class="projectLinks">
 				<a href="https://polar-crag-19379.herokuapp.com/">
-					<img src="assets/images/nyt-react-search.png" class="auth-image" alt="First Group Project" style="width: 250px;">
-					<h3>NYT-React Search.</h3>
+					<img src="assets/images/nyt-react-search2.png" class="portfolioImage" alt="First Group Project" style="width: 230px; border-width: 1px; border-color: #333333; border-style: solid;">
+					NYT-React Search.
+				</a>
+			</div>
+			<div class="col-md-3" id="projectLinks">
+				<a href="https://swolfmn78.github.io/project1JeRKS/">
+					<img src="assets/images/myShinDigSS.png" class="portfolioImage" alt="First Group Project"  style="width: 230px; border-width: 1px; border-color: #333333; border-style: solid;">
+					MyShinDig - Party Planing WebSite.
+				</a>
+			</div>
+			<div class="col-md-3" id="projectLinks">
+				<a href="https://polar-crag-19379.herokuapp.com/">
+					<img src="assets/images/nyt-react-search.png" class="portfolioImage" alt="First Group Project" style="width: 230px; border-width: 1px; border-color: #333333; border-style: solid;">
+					NYT-React Search.
 				</a>
 			</div>
 		</div>
 	</div>
+
+<!-- Second Nav experimenting--> 
+
+
 	
-			
-
-	<div class="row">
-		<div class="col-md-12">
-			<h1>Connect with Me</h1>
-		</div>
-	</div>	
-	
-	<div class="row">	
-		<div class="col-md-4">
-		
-		<section class="sidebar">
-		<div id="connect">
-			<h2> Connect with me</h2>
-			<img src="assets/images/icons/github.png" class="social" alt="Github">
-			<img src="assets/images/icons/linkedin.png" class="social" alt="Linkedin">
-			<img src="assets/images/icons/stackoverflow.png" class="social" alt="Stackoverflow">
-		</div>
-		</section>
-
-	<div class="row">	
-		<div class="col-md-4">
-
-		</div>
-	</div>	
-
-	<div class="row">	
-		<div class="col-md-4">
-		
-		</div>
-	</div>
 
 
 	
 	
-    <div class="card-body" id="footer">
+    <div class="card-body" id="footer" style="text-align: center">
         <p>Robin Bertuccelli
         © 2018 www.robinbertuccelli.com. All rights reserved.</p>
     </div>
