@@ -34,7 +34,7 @@
   margin-bottom: 50px;
 }
 .portfolioImage {
-  margin-right: 10px;
+  
   border: 3px;
   border-color: #CCCCCC;
 }
@@ -266,7 +266,11 @@ div#OR {
 }
 
 #metrodome {
-  width: 100px;
+  width: 300px;
+  position: absolute;
+    top: 50%;
+    left: 50%;
+   
 }
  .sticky {
   position: sticky;
