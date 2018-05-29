@@ -25,8 +25,8 @@
 
 <body>
 <!--Navbar. Never got it to align properly-->
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+ <!-- Navigation -->
+    <nav id="topNav" class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="index.html">Robin Bertuccelli</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -42,38 +42,60 @@
                 <li class="nav-item">
                     <a class="nav-link" href="contact.html" id="contactConfigLink">Contact</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="resume.html" id="contactConfigLink">Resume</a>
+                </li>
             </ul>
         </div>
     </nav>
-	</div>
 
-<div class="container">
+    <!-- Side navigation-The connect with me button/icons -->
+     <div id="mySidenav" class="sidenav">
+
+  <a href='https://www.facebook.com/robin.bertuccelli/' target="blank" id="facebook">
+  	<img src="assets/images/if_facebook.png"  alt=Facebook style="width: 40px; margin-left: auto;
+    margin-right: auto">
+  </a>
+
+  <a href="https://github.com/robinb242" target="blank" id="github">
+  	<img src="assets/images/if_social-github.png"  alt="Github" style="width: 40px; margin-left: auto;
+    margin-right: auto"> 
+  </a>
+
+  <a href="https://www.linkedin.com/in/robin-bertuccelli/" target="blank" id="linkedin">
+  	<img src="assets/images/if_linkedin.png"  alt=LinkedIn style="width: 40px; margin-left: auto;
+    margin-right: auto">
+  </a>
+
+  <a href="https://www.imdb.com/name/nm3031887/?ref_=fn_al_nm_1" target="blank"  id="imdb">
+  	<img src="assets/images/imdb.png"  alt=LinkedIn style="width: 40px; margin-left: auto;
+    margin-right: auto">
+  </a>
+</div>
+
+<!-- Main Body of Page-->
+
+
 	
-	<div class="container">
-		
-		<dir class="row">
-			<div class="col-md-12">
-			<h1>Portfolio</h1>
-			</div>	
-		</dir>
-	</div>
-
-	<hr width=90% align=left>
-
 	<div class="container">
 		<div class="row">
 			<div class="col-md-2">
 				<a href="portfolio-dev.html">
-					<img src="assets/images/myShinDigSS.png" class="img-responsive" alt="Feature films I've worked on" style="width: 130px;">
-					<h3>Web Applications</h3>
+					<img src="assets/images/petMatch.png" class="img-responsive" alt="Feature films I've worked on" style="width: 150px; border-width: 1px; border-color: #CCCCCC; border-style: solid;
+					;">
+					<p>
+					Web Applications
+				</p>
 				</a>
 
 			</div>
 
 			<div class="col-md-2">
 				<a href="portfolio-features.html">
-					<img src="assets/images/georgia_rock_crew.jpg" class="img-responsive" alt="Feature films I've worked on" style="width: 130px;">
-					<h3>Feature Films</h3>
+					<img src="assets/images/georgia_rock_crew.jpg" class="img-responsive" alt="Feature films I've worked on" style="width: 150px; border-width: 1px; border-color: #CCCCCC; border-style: solid;">
+					<p>
+					Feature Films
+				</p>
 				</a>
 
 			</div>
@@ -81,22 +103,26 @@
 	
 			<div class-"col-md-2">
 				<a href="portfolio-music-video.html">
-					<img src="assets/images/dessa.jpg"  alt="Music Videos I've worked on." style="width: 130px;">
-					<h3>Music Videos</h3>
+					<img src="assets/images/dessa.jpg"  class="img-responsive" alt="Music Videos I've worked on." style="width: 150px; border-width: 1px; border-color: #CCCCCC; border-style: solid;">
+					<p>
+					Music Videos
+				</p>
 				</a>
 			</div>
 	
 			<div class="col-md-2">
 				<a href="portfolio-short-films.html">
-					<img src="assets/images/ryan_and_me.jpg" class="auth-image" alt="Short Films I have worked on." style="width: 130px;">
-					<h3>Short Films</h3>
+					<img src="assets/images/ryan_and_me200.jpg" cclass="img-responsive" alt="Short Films I have worked on." style="width: 150px; border-width: 1px; border-color: #CCCCCC; border-style: solid;">
+					<p>
+					Short Films
+					</p>
 				</a>
 			</div>
 
 			<div class="col-md-2">
 				<a href="portfolio-broadcast.html">
-					<img src="assets/images/aicppromo.jpg" class="auth-image" alt="Broadcast commercials I've worked on." style="width: 130px;">
-					<h3>Broadcast Commercials</h3>
+					<img src="assets/images/aicppromo2.jpg" cclass="img-responsive" alt="Broadcast commercials I've worked on." style="width: 150px; border-width: 1px; border-color: #CCCCCC; border-style: solid;">
+					Broadcast Commercials
 				</a>
 			</div>
 		</div>
@@ -104,27 +130,19 @@
 </div>
 
 
-<!-- The connect with me button/icons -->
-<section class="sidebar">
-	<div id="connect">
-		<h2> Connect with me</h2>
-		<img src="assets/images/icons/github.png" class="social" alt="Github">
-		<img src="assets/images/icons/linkedin.png" class="social" alt="Linkedin">
-		<img src="assets/images/icons/stackoverflow.png" class="social" alt="Stackoverflow">
+<div class="container">
+	<div class="footer">  
+	    <div class="card-body" id="footer" style="text-align: center;">
+	        <p>Robin Bertuccelli© 2018 www.robinbertuccelli.com. All rights reserved.</p>
+	    </div>
 	</div>
-</section>
-
-</div>
-
-    <div class="card-body" id="footer">
-        <p>Robin Bertuccelli
-        © 2018 www.robinbertuccelli.com. All rights reserved.</p>
-    </div>
-
+ </div>
     <!-- Link for Javascripting information -->
     <script  src="assets/javascript/email.js"></script>
     <script src="assets/javascript/app.js"></script>
     <!-- Link access to the style.css file - if any would be applied. -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+
+
 </body>
 </html>
